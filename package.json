@@ -1,0 +1,26 @@
+{
+  "name": "elm",
+  "version": "1.0.0",
+  "description": "- 在查看 [vue项目](https://github.com/bailicangdu/vue2-elm)后，可以按照它的思想，把之前用到的vue知识点进行一个应用\r - 准备用到的技术点 vue + webpack + sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --open chrome --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuessFinger/elm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuessFinger/elm/issues"
+  },
+  "homepage": "https://github.com/GuessFinger/elm#readme",
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
