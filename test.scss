@@ -2,9 +2,10 @@ $background-color:green;
 $width:100px;
 $height:100px;
 .test2 {
-  background: $background-color;
+  //background: $background-color;
   height: $height;
   width: $width;
+  background-image: url("./src/images/ss.jpg");
 }
 
 

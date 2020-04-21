@@ -44,4 +44,19 @@ npm i -D sass-loader    因为sass-loader 依赖于node-sass  so   npm i -D node
 另一种就是
 const extractCSS = new ExtractTextWebpackPlugin('main.css');
 const extractSCSS = new ExtractTextWebpackPlugin('test.css'); // 配置scss-loader的时候 就用这个对象就可以了
-注意 你这个还是需要在main.js中去引入的哦 9
+注意 你这个还是需要在main.js中去引入的哦 p
+
+11. 需要配置image的loader   npm i -D file-loader
+  test:/\.(png|jpe?g|gif)$/i,
+  loader:'file-loader',
+  options: {name:`[path][name].[ext]` }
+
+12. 引入vue   npm i -D vue vue-loader  vue-template-compiler 后面这个是必须的  同时它的loader的配置方式也是不一样的
+const  VueLoaderPlugin = require('vue-loader/lib/plugin')  然后在插件的地方 new VueLoaderPlugin();
+因为知道需要使用vue-router   npm i -D vue-router
+
+13. 引入babel  babel-loader  @babel/core  @babel/preset-env @bable/runtime @bable/plugin-transform-runtime
+配置webpack.config.js   也需要配置.babelrc 
+
+14. 准备采用element-ui组件  npm i -D element-ui
+

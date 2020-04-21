@@ -1,3 +1,5 @@
 import './test.css';
 import './test.scss';
-console.log(333);
+
+let a = 2;
+console.log(a);
